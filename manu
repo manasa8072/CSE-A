@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Javascript</h1>
+    <button onclick="sayHello()">Click Ok</button>
 
+<script>
+    function sayHello(){
+        alert("Hello, world");
+    }
+    </script>
+
+    <script>
+    let name="Manasa";
+    let age="19";
+    let isStudent=true;
+
+    console.log(name,age,isStudent);
+</script>
+
+<script>
+    let a=10;
+    let b=5;
+
+    console.log("Sum",a+b);
+    console.log("Difference",a-b);
+    console.log("Product",a*b);
+    console.log("Quotient",a/b);
+
+function greet(name){
+    console.log("Welcome,"+name+"!");
+}
+greet("Jeswin Madona")
+</script>
+<script>
+let student = {
+    name: "Manasa",
+    age: 19,
+    marks: {
+        math: 85,
+        english: 92,
+        science: 78,
+        history: 88
+    }
+};
+
+let highestSubject = "";
+let highestMarks = -1;
+
+for (let subject in student.marks) {
+    if (student.marks[subject] > highestMarks) {
+        highestMarks = student.marks[subject];
+        highestSubject = subject;
+    }
+}
+console.log("Student Name:", student.name);
+console.log("Age:", student.age);
+console.log("Highest Marks:", highestMarks, "in", highestSubject);
+</script>
+
+
+</body>
+</html>
